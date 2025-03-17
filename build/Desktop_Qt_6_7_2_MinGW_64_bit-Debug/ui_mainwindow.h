@@ -41,11 +41,27 @@ public:
     QLCDNumber *lcdNumber_Y;
     QHBoxLayout *horizontalLayout_2;
     QVBoxLayout *verticalLayout_3;
+    QHBoxLayout *horizontalLayout_4;
     QPushButton *pushButton_plusX;
+    QVBoxLayout *verticalLayout_7;
+    QPushButton *pushButton_plus10X;
+    QPushButton *pushButton_plus50X;
+    QHBoxLayout *horizontalLayout_5;
     QPushButton *pushButton_moinsX;
+    QVBoxLayout *verticalLayout_8;
+    QPushButton *pushButton_moins10X;
+    QPushButton *pushButton_moins50X;
     QVBoxLayout *verticalLayout_4;
+    QHBoxLayout *horizontalLayout_6;
     QPushButton *pushButton_plusY;
-    QPushButton *pushButton_12;
+    QVBoxLayout *verticalLayout_9;
+    QPushButton *pushButton_plus10Y;
+    QPushButton *pushButton_plus50Y;
+    QHBoxLayout *horizontalLayout_7;
+    QPushButton *pushButton_moinsY;
+    QVBoxLayout *verticalLayout_10;
+    QPushButton *pushButton_moins10Y;
+    QPushButton *pushButton_moins50Y;
     QPushButton *pushButton_Conf;
     QVBoxLayout *verticalLayout_6;
     QLabel *label_pointVirgulle_4;
@@ -63,7 +79,7 @@ public:
         centralwidget->setObjectName("centralwidget");
         horizontalLayoutWidget = new QWidget(centralwidget);
         horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
-        horizontalLayoutWidget->setGeometry(QRect(60, 30, 701, 461));
+        horizontalLayoutWidget->setGeometry(QRect(60, 30, 841, 561));
         horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout_3->setObjectName("horizontalLayout_3");
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -137,6 +153,8 @@ public:
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName("verticalLayout_3");
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName("horizontalLayout_4");
         pushButton_plusX = new QPushButton(horizontalLayoutWidget);
         pushButton_plusX->setObjectName("pushButton_plusX");
         QSizePolicy sizePolicy2(QSizePolicy::Policy::Ignored, QSizePolicy::Policy::Ignored);
@@ -150,36 +168,142 @@ public:
         font2.setBold(false);
         pushButton_plusX->setFont(font2);
 
-        verticalLayout_3->addWidget(pushButton_plusX);
+        horizontalLayout_4->addWidget(pushButton_plusX);
 
+        verticalLayout_7 = new QVBoxLayout();
+        verticalLayout_7->setObjectName("verticalLayout_7");
+        pushButton_plus10X = new QPushButton(horizontalLayoutWidget);
+        pushButton_plus10X->setObjectName("pushButton_plus10X");
+        sizePolicy2.setHeightForWidth(pushButton_plus10X->sizePolicy().hasHeightForWidth());
+        pushButton_plus10X->setSizePolicy(sizePolicy2);
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("Impact")});
+        font3.setPointSize(24);
+        font3.setBold(false);
+        pushButton_plus10X->setFont(font3);
+
+        verticalLayout_7->addWidget(pushButton_plus10X);
+
+        pushButton_plus50X = new QPushButton(horizontalLayoutWidget);
+        pushButton_plus50X->setObjectName("pushButton_plus50X");
+        sizePolicy2.setHeightForWidth(pushButton_plus50X->sizePolicy().hasHeightForWidth());
+        pushButton_plus50X->setSizePolicy(sizePolicy2);
+        pushButton_plus50X->setFont(font3);
+
+        verticalLayout_7->addWidget(pushButton_plus50X);
+
+
+        horizontalLayout_4->addLayout(verticalLayout_7);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_4);
+
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setObjectName("horizontalLayout_5");
         pushButton_moinsX = new QPushButton(horizontalLayoutWidget);
         pushButton_moinsX->setObjectName("pushButton_moinsX");
         sizePolicy2.setHeightForWidth(pushButton_moinsX->sizePolicy().hasHeightForWidth());
         pushButton_moinsX->setSizePolicy(sizePolicy2);
         pushButton_moinsX->setFont(font2);
 
-        verticalLayout_3->addWidget(pushButton_moinsX);
+        horizontalLayout_5->addWidget(pushButton_moinsX);
+
+        verticalLayout_8 = new QVBoxLayout();
+        verticalLayout_8->setObjectName("verticalLayout_8");
+        pushButton_moins10X = new QPushButton(horizontalLayoutWidget);
+        pushButton_moins10X->setObjectName("pushButton_moins10X");
+        sizePolicy2.setHeightForWidth(pushButton_moins10X->sizePolicy().hasHeightForWidth());
+        pushButton_moins10X->setSizePolicy(sizePolicy2);
+        pushButton_moins10X->setFont(font3);
+
+        verticalLayout_8->addWidget(pushButton_moins10X);
+
+        pushButton_moins50X = new QPushButton(horizontalLayoutWidget);
+        pushButton_moins50X->setObjectName("pushButton_moins50X");
+        sizePolicy2.setHeightForWidth(pushButton_moins50X->sizePolicy().hasHeightForWidth());
+        pushButton_moins50X->setSizePolicy(sizePolicy2);
+        pushButton_moins50X->setFont(font3);
+
+        verticalLayout_8->addWidget(pushButton_moins50X);
+
+
+        horizontalLayout_5->addLayout(verticalLayout_8);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_5);
 
 
         horizontalLayout_2->addLayout(verticalLayout_3);
 
         verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setObjectName("verticalLayout_4");
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName("horizontalLayout_6");
         pushButton_plusY = new QPushButton(horizontalLayoutWidget);
         pushButton_plusY->setObjectName("pushButton_plusY");
         sizePolicy2.setHeightForWidth(pushButton_plusY->sizePolicy().hasHeightForWidth());
         pushButton_plusY->setSizePolicy(sizePolicy2);
         pushButton_plusY->setFont(font2);
 
-        verticalLayout_4->addWidget(pushButton_plusY);
+        horizontalLayout_6->addWidget(pushButton_plusY);
 
-        pushButton_12 = new QPushButton(horizontalLayoutWidget);
-        pushButton_12->setObjectName("pushButton_12");
-        sizePolicy2.setHeightForWidth(pushButton_12->sizePolicy().hasHeightForWidth());
-        pushButton_12->setSizePolicy(sizePolicy2);
-        pushButton_12->setFont(font2);
+        verticalLayout_9 = new QVBoxLayout();
+        verticalLayout_9->setObjectName("verticalLayout_9");
+        pushButton_plus10Y = new QPushButton(horizontalLayoutWidget);
+        pushButton_plus10Y->setObjectName("pushButton_plus10Y");
+        sizePolicy2.setHeightForWidth(pushButton_plus10Y->sizePolicy().hasHeightForWidth());
+        pushButton_plus10Y->setSizePolicy(sizePolicy2);
+        pushButton_plus10Y->setFont(font3);
 
-        verticalLayout_4->addWidget(pushButton_12);
+        verticalLayout_9->addWidget(pushButton_plus10Y);
+
+        pushButton_plus50Y = new QPushButton(horizontalLayoutWidget);
+        pushButton_plus50Y->setObjectName("pushButton_plus50Y");
+        sizePolicy2.setHeightForWidth(pushButton_plus50Y->sizePolicy().hasHeightForWidth());
+        pushButton_plus50Y->setSizePolicy(sizePolicy2);
+        pushButton_plus50Y->setFont(font3);
+
+        verticalLayout_9->addWidget(pushButton_plus50Y);
+
+
+        horizontalLayout_6->addLayout(verticalLayout_9);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_6);
+
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setObjectName("horizontalLayout_7");
+        pushButton_moinsY = new QPushButton(horizontalLayoutWidget);
+        pushButton_moinsY->setObjectName("pushButton_moinsY");
+        sizePolicy2.setHeightForWidth(pushButton_moinsY->sizePolicy().hasHeightForWidth());
+        pushButton_moinsY->setSizePolicy(sizePolicy2);
+        pushButton_moinsY->setFont(font2);
+
+        horizontalLayout_7->addWidget(pushButton_moinsY);
+
+        verticalLayout_10 = new QVBoxLayout();
+        verticalLayout_10->setObjectName("verticalLayout_10");
+        pushButton_moins10Y = new QPushButton(horizontalLayoutWidget);
+        pushButton_moins10Y->setObjectName("pushButton_moins10Y");
+        sizePolicy2.setHeightForWidth(pushButton_moins10Y->sizePolicy().hasHeightForWidth());
+        pushButton_moins10Y->setSizePolicy(sizePolicy2);
+        pushButton_moins10Y->setFont(font3);
+
+        verticalLayout_10->addWidget(pushButton_moins10Y);
+
+        pushButton_moins50Y = new QPushButton(horizontalLayoutWidget);
+        pushButton_moins50Y->setObjectName("pushButton_moins50Y");
+        sizePolicy2.setHeightForWidth(pushButton_moins50Y->sizePolicy().hasHeightForWidth());
+        pushButton_moins50Y->setSizePolicy(sizePolicy2);
+        pushButton_moins50Y->setFont(font3);
+
+        verticalLayout_10->addWidget(pushButton_moins50Y);
+
+
+        horizontalLayout_7->addLayout(verticalLayout_10);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_7);
 
 
         horizontalLayout_2->addLayout(verticalLayout_4);
@@ -252,9 +376,17 @@ public:
         label_pointVirgulle->setText(QCoreApplication::translate("MainWindow", ";", nullptr));
         label_pointVirgulle_3->setText(QCoreApplication::translate("MainWindow", "Y", nullptr));
         pushButton_plusX->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
+        pushButton_plus10X->setText(QCoreApplication::translate("MainWindow", "+10", nullptr));
+        pushButton_plus50X->setText(QCoreApplication::translate("MainWindow", "+50", nullptr));
         pushButton_moinsX->setText(QCoreApplication::translate("MainWindow", "-", nullptr));
+        pushButton_moins10X->setText(QCoreApplication::translate("MainWindow", "-10", nullptr));
+        pushButton_moins50X->setText(QCoreApplication::translate("MainWindow", "-50", nullptr));
         pushButton_plusY->setText(QCoreApplication::translate("MainWindow", "+", nullptr));
-        pushButton_12->setText(QCoreApplication::translate("MainWindow", "-", nullptr));
+        pushButton_plus10Y->setText(QCoreApplication::translate("MainWindow", "+10", nullptr));
+        pushButton_plus50Y->setText(QCoreApplication::translate("MainWindow", "+50", nullptr));
+        pushButton_moinsY->setText(QCoreApplication::translate("MainWindow", "-", nullptr));
+        pushButton_moins10Y->setText(QCoreApplication::translate("MainWindow", "-10", nullptr));
+        pushButton_moins50Y->setText(QCoreApplication::translate("MainWindow", "-50", nullptr));
         pushButton_Conf->setText(QCoreApplication::translate("MainWindow", "Confirmer", nullptr));
         label_pointVirgulle_4->setText(QCoreApplication::translate("MainWindow", "Parcours", nullptr));
         pushButton_Del->setText(QCoreApplication::translate("MainWindow", "Supprimer", nullptr));
